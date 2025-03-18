@@ -29,4 +29,15 @@ function updateList() {
   })
 }
 
+function sortearAmigo() {
+  if (friendsList.length === 0) {
+    alert("Não ninguem para sortear!")
+    return
+  }
 
+  let i = Math.floor(Math.random() * friendsList.length);
+  let radomFriend = friendsList[i];
+  let result = document.getElementById('resultado');
+
+  result.innerHTML = `O amigo sorteado é: ${radomFriend}`;
+}
