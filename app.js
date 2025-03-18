@@ -40,4 +40,7 @@ function sortearAmigo() {
   let result = document.getElementById('resultado');
 
   result.innerHTML = `O amigo sorteado é: ${radomFriend}`;
+
+  friendsList = [];
+  updateList();
 }
